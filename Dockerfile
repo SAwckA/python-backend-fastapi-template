@@ -10,12 +10,13 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY Makefile .
 
-COPY lifestat lifestat
+COPY core core
+COPY auth auth
+COPY utils utils
 COPY settings settings
-COPY init_test.sql .
-COPY data_test.sql .
-RUN mkdir ~/.postgresql
-COPY root.crt /root/.postgresql/root.crt
+
+#RUN mkdir ~/.postgresql
+#COPY root.crt /root/.postgresql/root.crt
 
 EXPOSE 8000
 
