@@ -1,10 +1,12 @@
-from pydantic import BaseModel, validator
-from datetime import datetime
 import re
+from datetime import datetime
+
+from pydantic import BaseModel, validator
 
 
 class UserLogin(BaseModel):
-    """ Объект пользователя из базы данных для логина"""
+    """Объект пользователя из базы данных для логина"""
+
     id: int
     username: str
     email: str
@@ -12,7 +14,8 @@ class UserLogin(BaseModel):
 
 
 class UserDetail(BaseModel):
-    """ Полный объект пользователя"""
+    """Полный объект пользователя"""
+
     username: str
     email: str
     fio: str
@@ -23,7 +26,8 @@ class UserDetail(BaseModel):
 
 
 class RegisterForm(BaseModel):
-    """ Форма регистрации пользователя """
+    """Форма регистрации пользователя"""
+
     username: str
     password: str
     email: str
@@ -66,13 +70,14 @@ class RegisterForm(BaseModel):
         r = r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+'
         regex = re.compile(r)
         if not re.fullmatch(regex, v):
-            raise ValueError("Invalid email")
+            raise ValueError('Invalid email')
 
         return v
 
 
 class LoginForm(BaseModel):
-    """ Форма аутентификации по паролю пользователя """
+    """Форма аутентификации по паролю пользователя"""
+
     username: str
     password: str
     remember: bool = True

@@ -1,5 +1,6 @@
 from fastapi import Cookie
-from auth.tokens import JWTAccessToken, AccessPayload
+
+from auth.tokens import AccessPayload, JWTAccessToken
 
 
 def validate(token):
@@ -11,7 +12,7 @@ def validate(token):
 
 class AccessTokenAuth:
     def __init__(
-                self,
-                access_token: str = Cookie('access_token')
-                ):
+        self,
+        access_token: str = Cookie('access_token'),
+    ):
         self.user: AccessPayload = validate(access_token)

@@ -1,7 +1,7 @@
-from fastapi import FastAPI
 import asyncpg  # type: ignore # noqa
-from core.database import DB
+from fastapi import FastAPI
 
+from core.database import DB
 
 app = FastAPI()
 db = DB()

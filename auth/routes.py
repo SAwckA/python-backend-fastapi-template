@@ -1,8 +1,9 @@
-from core.app import app
-from . import views
-from . import schemas
 from starlette.responses import Response
+
+from core.app import app
 from settings.config import JWTConfig
+
+from . import schemas, views
 
 
 @app.post('/login')
@@ -21,11 +22,12 @@ async def login(form: schemas.LoginForm, response: Response):
      response.body =
     """
 
-    response.set_cookie(key="access_token",
-                        value=token,
-                        httponly=True,
-                        expires=JWTConfig.access_token_exp.seconds
-                            if not form.remember else None)
+    response.set_cookie(
+        key='access_token',
+        value=token,
+        httponly=True,
+        expires=JWTConfig.access_token_exp.seconds if not form.remember else None,
+    )
 
     return response
 
@@ -39,4 +41,4 @@ async def register(form: schemas.RegisterForm):
     """
     await views.register_view(form)
 
-    return "OK"
+    return 'OK'

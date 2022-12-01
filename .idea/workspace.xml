@@ -5,31 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c62434a-15cb-420b-aa5e-7ab91522efba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.flake8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/db_operations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/dependencies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/schemas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/tokens.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mypy.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/hash_algs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/db_operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/db_operations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/dependencies.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/dependencies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/schemas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/tokens.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/tokens.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/hash_algs.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/hash_algs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +75,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.config">
+  <component name="RunManager" selected="Makefile Target.lint">
     <configuration name="lint" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/Makefile" target="lint" workingDirectory="" arguments="">
         <envs />
@@ -147,9 +134,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Makefile Target.lint" />
         <item itemvalue="Python.config" />
         <item itemvalue="Makefile Target.run" />
-        <item itemvalue="Makefile Target.lint" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +149,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669898577287</updated>
       <workItem from="1669898578675" duration="545000" />
-      <workItem from="1669899137061" duration="15653000" />
+      <workItem from="1669899137061" duration="16741000" />
     </task>
     <servers />
   </component>
