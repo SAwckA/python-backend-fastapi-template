@@ -5,19 +5,19 @@
 ### Запуск и сборка приложения в Docker compose
 #### *Запуск Postgres в docker, как зависимость*
 
-```bash
+```shell
 # Сборка приложение
 
 $ sudo docker-compose build .
 ```
 
-```bash
+```shell
 # Запуск приложения вместе с базой данных
 
 $ sudo docker-compose up -d
 ```
 
-```bash
+```shell
 # Завершение работы
 
 $ sudo docker-compose down
@@ -25,7 +25,7 @@ $ sudo docker-compose down
 
 ### Запуск контейнера с удалённой бд и уже собранном образе на ghcr.io
 
-```bash
+```shell
 # Запуск контейнера
 ```
 
@@ -77,25 +77,25 @@ environment:
 
 #### *Makefile*
 
-```bash
+```shell
 # Запуск проекта
 
 $ make run
 ```
 
-```bash
+```shell
 # Линт кода
 
 $ make lint
 ```
 
-```bash
+```shell
 # Pretty кода
 
 $ make pretty
 ```
 
-```bash
+```shell
 # Перед push
 # Линт и pretty
 
